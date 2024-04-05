@@ -1,14 +1,14 @@
 import Navegacao from '../../components/Navegacao/Navegacao';
-import CardAnimais from '../../components/CardAnimal/CardAnimal';
 import './Depoimentos.css'
 
 function Depoimentos(){
 return(
     <>
     <Navegacao/>
-    <CardAnimais/>
-    <p></p>
+    
+    <p> Nada Aqui Ainda!</p>
     </>
-);
+   );
 }
+
 export default Depoimentos

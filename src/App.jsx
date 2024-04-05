@@ -1,18 +1,26 @@
 import './App.css'
 import Home from './pages/Home/Home';
 import Animais from './pages/Animais/Animais';
-import { BrowserRouter as Roteador, Routes, Route} from 'react-router-dom';
+import Fotos from './pages/Fotos/Fotos'
+import Depoimentos from './pages/Depoimentos/Depoimentos';
+import Login from './pages/Login/Login';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
 
 function App() {
 
   return (
     <>
-      <Roteador>
+      <BrowserRouter>
         <Routes>
           <Route exact path='/' Component={Home} />
-          <Route path='/animais' Component={Animais} />
+          <Route exact path='/animais' Component={Animais} />
+          <Route exact path='/fotos' Component={Fotos}/>
+          <Route exact path='/depoimentos' Component={Depoimentos}/>
+          <Route exact path='/login' Component={Login}/>
         </Routes>
-      </Roteador>
+      </BrowserRouter>
     </>
   )
 }
